@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Mobile-Usage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta http-equiv="cleartype" content="on">
+    <script>
+        if (/\bMSIE\b/.exec(window.navigator.userAgent)) {
+            // MSIE 10 does not recognize conditional comments but causes problems w/ my SVG code
+            // I don't want to support f*?king IE in my free time, joder!!!!
+            window.location = 'ua_not_supported.html';
+        }
+    </script>
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/useragent-analyze.css"/>
+
+    <link rel="stylesheet" href="lib/nv.d3.min.css" type="text/css"/>
+</head>
+<body class="with-3d-shadow with-transitions" data-spy="scroll" data-target="#sidebar-nav">
+
+<div class="container">
+
+    <div class="page-header">
+        <h1>Mobile-Usage <small id="header"></small></h1>
+    </div>
+
+    <noscript>
+        <h4>JavaScript deaktiviert</h4>
+
+        <div class="alert alert-error">
+            JavaScript is deactivated in your Browser<br/>
+            This page can not be viewed without enabling JavaScript.
+        </div>
+    </noscript>
+
+    <div class="row">
+        <div class="col-md-3">
+            <div class="hidden-print affix-top" role="complementary">
+                <ul class="nav ua-sidenav" id="sidebar-nav"
+                    data-spy="affix" data-offset-top="80" data-offset-bottom="100">
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-9" role="main">
+            <div id="main">
+                <p class="center-block">Loading ...</p>
+            </div>
+            <div class="hidden-print">
+                <a class="ua-anchor" id="about"></a>
+                <h2>About</h2>
+                <p>
+                    There are many very good HTTP-log analyzers like <a href="http://awstats.sourceforge.net">AWstats</a>,
+                    <a href="http://www.webalizer.org/">The Webalizer</a> or <a href="http://www.analog.cx/">Analog</a>,
+                    just to name a few.<br>
+                    <a href="http://hgoebl.github.io/Mobile-Usage/">Mobile-Usage</a> (the tool which generated this
+                    statistic) is not a full-blown log analyzer, just a supplement to existing ones with a special focus
+                    on mobile devices. It should give you answers to questions like:
+                    <ul>
+                        <li>How many visitors come to my site using phones or tablets?</li>
+                        <li>Which mobile devices are used?</li>
+                        <li>Which mobile operating systems and versions are used?</li>
+                    </ul>
+                    This statistic is based on a piece of information provided by browsers requesting web resources
+                    like HTML-pages and images. Web-Browsers and search engines usually send an HTTP-Header called
+                    <b>User-Agent</b>. With the help of <a href="http://mobiledetect.net/">Mobile-Detect</a>, devices
+                    are detected by the User-Agent header.
+                </p>
+                <div class="alert alert-info">
+                    You can view Mobile-Usage statistics by drag &amp; drop the generated summary JSON file to
+                    this page!
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-1.10.1.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="lib/d3.v3.js"></script>
+<script src="lib/nv.d3.min.js"></script>
+<script src="js/useragent-analyze.js"></script>
+</body>
+</html>

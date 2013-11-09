@@ -276,7 +276,7 @@
             totalHits;
 
         $('#header').text(summary.header);
-        document.title = summary.header ? summary.header + ' (Mobile-Usage)' : 'Mobile-Usage';
+        document.title = summary.header ? summary.header + ' (mobile-usage)' : 'mobile-usage';
         totalHits = totalHitsCount(summary);
 
         Object.keys(metadata).forEach(function createHtml(categoryKey) {

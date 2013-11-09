@@ -1,4 +1,4 @@
-# Mobile-Usage
+# mobile-usage
 
 Analyze HTTP access logs and visualize statistics w/ focus on mobile usage.
 
@@ -16,8 +16,9 @@ You get information about
 
 ## Example Output
 
-See an example output at <http://hgoebl.github.io/Mobile-Usage/>. Do not believe the numbers - the statistic
-is generated using the test-data of `mobile-detect.js`, so it is only reflecting User-Agents covered by the test.
+See an example output at <http://hgoebl.github.io/mobile-usage/>. Do not believe the numbers - the statistic
+is generated using the test-data of [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js/), so it is
+only reflecting User-Agents covered by the test. It has absolutely nothing to do with reality.
 
 <img src="mobile-usage-preview.png">
 
@@ -26,7 +27,7 @@ is generated using the test-data of `mobile-detect.js`, so it is only reflecting
 There are many very good HTTP-log analyzers like <a href="http://awstats.sourceforge.net">AWstats</a>,
 <a href="http://www.webalizer.org/">The Webalizer</a> or <a href="http://www.analog.cx/">Analog</a>,
 just to name a few.<br>
-<a href="http://hgoebl.github.io/Mobile-Usage/">Mobile-Usage</a> is not a full-blown log analyzer, just
+<a href="https://github.com/hgoebl/mobile-usage/">mobile-usage</a> is not a full-blown log analyzer, just
 a supplement to existing ones with a special focus on mobile devices.
 It should give you answers to questions like:
 <ul>
@@ -46,7 +47,7 @@ HTTP-Header 'User-Agent'.
 
 # Installation
 
-    $ npm install [-g] Mobile-Usage
+    $ npm install [-g] mobile-usage
 
 # Usage
 
@@ -72,10 +73,10 @@ Options:
 
 ## Configuration
 
-You can provide a configuration object containing your implementations of `analyze, filterRaw, transform,
-filterCooked, map, reduce`. Most often one will only provide a custom `analyze` function (if log-file is not in Apache
-httpd combined format), probably a `filterRaw` function for eliminating unwanted request types and sometimes
-a `filterCooked` method to drop hits of irrelevant device types, e.g. Bots.
+You can provide a configuration object containing your implementations of `analyze`, `filterRaw`, `transform`,
+`filterCooked`, `map`, `reduce`. Most often one will only provide a custom `analyze` function (if log-file is
+not in Apache httpd combined format), probably a `filterRaw` function for eliminating unwanted request types
+and sometimes a `filterCooked` method to drop hits of irrelevant device types, e.g. Bots.
 
 Have a look at the example at `./config-example.js`.
 
@@ -136,8 +137,8 @@ summary by returning a truthy value.
 
 ## Map
 
-In this step the cooked objects from `transform` are prepared to better suite as statistical input. You can this
-of this aggregated object as tiny summaries.
+In this step the cooked objects from `transform` are prepared to better suite as statistical input. You can think
+of this aggregated object as "tiny summaries".
 
 ## Reduce
 
@@ -169,7 +170,7 @@ Special thanks to the guys who created and open-sourced this awesome work! This 
 
 Your contribution is welcome.
 
-  * fork hgoebl/Mobile-Usage
+  * fork hgoebl/mobile-usage
   * run `npm install`
   * create branch
   * make changes and run `npm test` (**TODO** not available yet)
@@ -182,7 +183,8 @@ Your contribution is welcome.
 
 # TODO
 
-  * documentation
-  * generate gh-pages
+  * improve documentation
+  * generate gh-pages (better than `cp -r web/* ../mobile-usage@gh-pages/`
+  * add Gruntfile (jshint, gh-pages, uglify)
   * CLI for static server (web)
   * add tests, at least for summary-generation

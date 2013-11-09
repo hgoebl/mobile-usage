@@ -1,13 +1,13 @@
 {
-    "name": "Mobile-Usage",
+    "name": "mobile-usage",
     "version": "0.1.0",
     "description": "Analyze HTTP access logs and visualize statistics w/ focus on mobile usage",
     "main": "index.js",
     "repository": {
         "type": "git",
-        "url": "github.com/hgoebl/Mobile-Usage"
+        "url": "github.com/hgoebl/mobile-usage"
     },
-    "homepage": "https://github.com/hgoebl/Mobile-Usage/",
+    "homepage": "https://github.com/hgoebl/mobile-usage/",
     "keywords": [
         "logfile",
         "analyse",

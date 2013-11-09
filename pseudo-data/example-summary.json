@@ -1,0 +1,216 @@
+{
+	"header": "mobile-detect UAs",
+	"hits": 568,
+	"os": {
+		"AndroidOS": 298,
+		"WindowsPhoneOS": 120,
+		"iOS": 15,
+		"BlackBerryOS": 20,
+		"webOS": 1,
+		"WindowsMobileOS": 2,
+		"JavaOS": 12,
+		"SymbianOS": 40,
+		"badaOS": 2,
+		"PalmOS": 1
+	},
+	"tablet": {
+		"AcerTablet": 13,
+		"AinolTablet": 3,
+		"AllFineTablet": 1,
+		"AsusTablet": 12,
+		"AllViewTablet": 3,
+		"Kindle": 3,
+		"iPad": 7,
+		"ArchosTablet": 2,
+		"BlackBerryTablet": 1,
+		"BronchoTablet": 1,
+		"bqTablet": 4,
+		"ChangJiaTablet": 2,
+		"CobyTablet": 3,
+		"CubeTablet": 1,
+		"DanewTablet": 1,
+		"DPSTablet": 1,
+		"EbodaTablet": 4,
+		"FujitsuTablet": 2,
+		"GalapadTablet": 1,
+		"NexusTablet": 4,
+		"GUTablet": 2,
+		"HCLTablet": 4,
+		"HPTablet": 3,
+		"HuaweiTablet": 4,
+		"IRUTablet": 1,
+		"KarbonnTablet": 1,
+		"KoboTablet": 1,
+		"LenovoTablet": 2,
+		"LGTablet": 2,
+		"MegafonTablet": 1,
+		"MicromaxTablet": 1,
+		"SurfaceTablet": 4,
+		"MotorolaTablet": 3,
+		"NabiTablet": 1,
+		"NecTablet": 2,
+		"NookTablet": 3,
+		"OvermaxTablet": 1,
+		"YONESTablet": 1,
+		"PantechTablet": 1,
+		"PointOfViewTablet": 1,
+		"PrestigioTablet": 1,
+		"PROSCANTablet": 1,
+		"RockChipTablet": 2,
+		"SamsungTablet": 19,
+		"SonyTablet": 5,
+		"TelstraTablet": 1,
+		"TexetTablet": 1,
+		"ToshibaTablet": 1,
+		"VersusTablet": 6,
+		"ZyncTablet": 1,
+		"GenericTablet": 1
+	},
+	"mobileGrade": {
+		"A": 401,
+		"C": 72,
+		"B": 14
+	},
+	"mobileGradeAll": {
+		"A": 455,
+		"C": 99,
+		"B": 14
+	},
+	"formfactor": {
+		"Tablet": 140,
+		"Phone": 340,
+		"Phone/Tablet": 7,
+		"TV/Console": 6,
+		"Bot": 3
+	},
+	"versions": {
+		"Webkit": {
+			"413": 11,
+			"525": 9,
+			"528": 2,
+			"530": 9,
+			"531": 2,
+			"533": 112,
+			"534": 137,
+			"535": 42,
+			"536": 7,
+			"537": 30
+		},
+		"Android": {
+			"3.2": 9,
+			"4.1": 56,
+			"4.0": 106,
+			"4.2": 12,
+			"2.3": 70,
+			"2.2": 22,
+			"1.6": 2,
+			"4.3": 1,
+			"1.5": 2,
+			"2.1": 8,
+			"2.0": 1,
+			"3.0": 4,
+			"3.1": 1
+		},
+		"Chrome": {
+			"16": 1,
+			"18": 38,
+			"21": 2,
+			"23": 1,
+			"24": 1,
+			"25": 3,
+			"26": 4,
+			"27": 7,
+			"28": 10,
+			"29": 4
+		},
+		"IE": {
+			"7": 3,
+			"9": 120,
+			"10": 13
+		},
+		"Windows Phone OS": {
+			"7.5": 119,
+			"8.0": 1,
+			"7.0": 1
+		},
+		"Kindle": {
+			"3": 1
+		},
+		"iPod": {
+			"6": 1,
+			"7": 1
+		},
+		"iOS": {
+			"3": 2,
+			"4": 1,
+			"5": 3,
+			"6": 7,
+			"7": 1
+		},
+		"iPhone": {
+			"3": 1,
+			"5": 1,
+			"6": 4
+		},
+		"iPad": {
+			"3": 1,
+			"4": 1,
+			"5": 2,
+			"6": 2
+		},
+		"Windows NT": {
+			"6.2": 19,
+			"6.1": 5,
+			"5.2": 3,
+			"6.3": 2
+		},
+		"Firefox": {
+			"14": 1,
+			"17": 1,
+			"18": 1,
+			"19": 1,
+			"21": 1,
+			"22": 2,
+			"25": 1
+		},
+		"Symbian": {
+			"3": 9,
+			"6": 1,
+			"9": 28
+		}
+	},
+	"userAgent": {
+		"Chrome": 65,
+		"IE": 122,
+		"Safari": 187,
+		"Opera": 5,
+		"UCBrowser": 7,
+		"GenericBrowser": 21,
+		"Dolfin": 4
+	},
+	"desktopBrowser": {
+		"IE": 16,
+		"Opera": 28,
+		"(unknown)": 10,
+		"Chrome": 10,
+		"Firefox": 8
+	},
+	"phone": {
+		"Asus": 1,
+		"Motorola": 21,
+		"iPhone": 9,
+		"BlackBerry": 19,
+		"Dell": 3,
+		"Fly": 2,
+		"Nexus": 6,
+		"HTC": 94,
+		"LG": 16,
+		"Micromax": 1,
+		"GenericPhone": 74,
+		"Samsung": 77,
+		"Pantech": 4,
+		"SimValley": 1,
+		"Sony": 18,
+		"Palm": 1
+	}
+}

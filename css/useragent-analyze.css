@@ -1,0 +1,53 @@
+body {
+    overflow-y: scroll;
+    margin-bottom: 60px;
+}
+
+body > div.container.dragged {
+    /* background-color: #d7ff5e; */
+}
+
+svg text {
+    font: 12px sans-serif;
+}
+
+.mypiechart {
+    width: 500px;
+    border: 2px;
+}
+
+.ua-sidenav {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f7f5fa;
+    border-radius: 5px;
+}
+
+a.ua-anchor {
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.table {
+    margin-bottom: 60px;
+}
+
+@media print {
+    h2.category-title,
+    h2.category-title + p,
+    p.count-info {
+        page-break-after: avoid;
+    }
+
+    h2.category-title + p,
+    h2.category-title + p + div,
+    p.count-info,
+    svg.mypiechart {
+        page-break-before: avoid;
+    }
+}

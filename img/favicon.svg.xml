@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="mypiechart" height="500" width="500">
+    <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
+        <g>
+            <g class="nv-pieWrap">
+                <g class="nvd3 nv-wrap nv-pie nv-chart-9750" transform="translate(0,0)">
+                    <g>
+                        <g class="nv-pie" transform="translate(230,225)">
+                            <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
+                                <path d="M1.1021457184401395e-14,-180A180,180 0 1,1 -161.19023722983067,-80.11059494093716L0,0Z"></path>
+                            </g>
+                            <g class="nv-slice" fill="#ff7f0e" stroke="#ff7f0e">
+                                <path d="M-161.19023722983067,-80.11059494093716A180,180 0 0,1 -32.33607906785644,-177.07167472669744L0,0Z"></path>
+                            </g>
+                            <g class="nv-slice" fill="#2ca02c" stroke="#2ca02c">
+                                <path d="M-32.33607906785644,-177.07167472669744A180,180 0 0,1 -1.9293648709922673e-13,-180L0,0Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

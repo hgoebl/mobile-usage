@@ -148,26 +148,30 @@
     }
 
     function transformObject(object, sum, maxItems) {
-        var data, others = sum;
+        var data, othersSum = sum, othersCount = 0;
 
         data = Object.keys(object).map(function (key) {
             var count = object[key];
-            others -= count;
+            othersSum -= count;
             return {key: key, n: count};
         });
         data.sort(sortByN);
-        if (maxItems && data.length >= maxItems) {
+        if (maxItems && data.length > maxItems) {
             data = data.filter(function (item, index) {
                 if (index < maxItems - 1) {
                     return true;
                 }
-                others += item.n;
+                othersSum += item.n;
+                ++othersCount;
                 return false;
             })
         }
-        if (others > 0) {
-            data.push({key: '(others)', n: others});
-            data.sort(sortByN);
+        if (othersSum > 0) {
+            data.push({
+                key: othersCount ? '(others: ' + othersCount + ')' : '(others)',
+                n: othersSum
+            });
+            // data.sort(sortByN); do not sort, so others are always last
         }
         return data;
     }
